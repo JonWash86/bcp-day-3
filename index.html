@@ -10,14 +10,38 @@
     <p>See console</p>
 
     <script>
-        var x = prompt("pick a number");
+        var x = 100; //prompt('pick a number');
 
-        if(x % 2 === 0) {
-            console.log('x is even')
+           // Parts of a for loop:
+           // 1 - initialization
+           // 2 - condition 
+           // 3 - post-loop action (go back to 2)
+//        for(var i = 0; i < x; i++) {
+//            if (i % 2 === 0){ 
+//                console.log(i, 'is an even number');
+//            }
+//        }
+
+
+
+//        for(var i = 100; i > -1; i--) {
+//            console.log('counting down, we are at', i)
+//        }
+
+        for(var i = 0; i < x; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log('fizzbuzz')
+            }
+            else if (i % 3 === 0) {
+                console.log('fizz')
+            }
+            else if (i % 5 === 0) {
+                console.log('buzz')
+            }
+            else console.log(i)
+            
         }
-        else {
-            console.log('x is odd');
-        }
+
 
     </script>
 </body>
